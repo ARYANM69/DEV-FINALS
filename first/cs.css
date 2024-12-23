@@ -1,0 +1,34 @@
+#raju{
+font-size: xx-large;
+
+text-decoration-line: underline;
+}
+
+.aryan{
+    font-size: xx-large;
+    text-decoration-line: underline;
+}
+
+#hello {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #hello::after {
+    content: "Tofu"; /* The text to display */
+    position: absolute;
+    bottom: 10px; /* Adjust the position of the text */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 5px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    display: none; /* Hide text by default */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  #hello:hover::after {
+    display: block; /* Show text on hover */
+  }
+  

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML FIRST</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/900/900618.png">
+    <link rel="stylesheet" href="cs.css">
+</head>
+
+<body>
+    <ul>
+        <li>
+            <h1>TAGS ARE SYNTAX THAT DEFINE ELEMENTS</h1>
+            <ul>
+                <li>
+                    <span style="font-size: larger;">
+                        <h1>This is the heading tag</h1>
+                    </span>
+                    <h1>H1</h1>
+                    <h2>H2</h2>
+                    <h3>H3</h3>
+                    <h4>H4</h4>
+                    <h5>H5</h5>
+                    <h6>H6</h6>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>ELEMENTS</h3>
+    Elements have a starting tag, a closing tag, and optional content inside them. <br>
+    <ul>
+        <li>BLOCK ELEMENTS</li>
+        <li>INLINE ELEMENTS</li>
+    </ul>
+
+    <hr style="height: 3px; background-color: black; border: none;">
+    <br>
+
+    <div style="font-size: xx-large;">
+        - **`id`**: Should be used only for a **single element** within a document because it uniquely identifies
+        that element. For example:
+        ```html
+        <div id="unique">This is unique</div>
+        ```
+        Using the same `id` on multiple elements is invalid and can lead to issues in CSS or JavaScript targeting.
+
+        - **`class`**: Can be used for **multiple elements** that share similar styling or behavior. For example:
+        ```html
+        <div class="common">Item 1</div>
+        <div class="common">Item 2</div>
+        ```
+
+        In your example, it's correct to use `class="aryan"` for multiple elements, but `id="raju"` should only
+        appear on one element.
+    </div>
+
+    <div id="raju">ID</div>
+    <div class="aryan">CLASS</div>
+    <div class="aryan">CLASS</div>
+
+    <hr style="height: 3px; background-color: rgb(35, 34, 34); border: none;">
+
+    <h4>DESCRIPTION LIST</h4>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language used to structure content on the web.</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets used for styling the web content.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>A programming language used to create dynamic and interactive web content.</dd>
+    </dl>
+
+    <h4>IMAGE TAG</h4>
+    <div id="hello">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT3sd-NoWKRLEicJHXV6b2UdT86wCbdXSyiw&s"
+            height="500" width="700" alt="TOFU">
+    </div>
+
+    <br>
+
+    <video controls loop muted width="500" height="300">
+        <source src="VID20231126202013.mp4" type="video/mp4">
+    </video>
+
+    <br><br><br>
+
+    <h3>Here are the concise definitions for each concept, ideal for adding to your conclusions page:</h3>
+
+    <ul>
+        <li><strong>SEO in HTML:</strong> SEO refers to optimizing web content and structure for better search engine ranking. Key practices include using title tags, meta descriptions, alt text, and proper URL structure.</li>
+        <li><strong>Viewport in Meta Tag:</strong> The viewport meta tag controls the visible area of a web page on different devices. It ensures the page is responsive and adjusts content based on the device’s screen size.</li>
+        <li><strong>Title Tag:</strong> The title tag defines the title of a webpage, displayed in search engine results and browser tabs. It should be concise and include relevant keywords.</li>
+        <li><strong>Meta Tags:</strong> Meta tags provide metadata about a webpage, like descriptions and keywords, to search engines. They include the <code>description</code> tag for summaries and <code>keywords</code> for target terms.</li>
+        <li><strong>Headings (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>):</strong> Headings provide a hierarchical structure to a webpage's content, making it easier for both users and search engines to understand.</li>
+        <li><strong>Alt Text for Images (<code>&lt;img alt="...&gt;</code>):</strong> Alt text describes images for search engines and visually impaired users. It helps search engines understand what the image is about and improves accessibility.</li>
+        <li><strong>URL Structure:</strong> SEO-friendly URLs are simple, descriptive, and include relevant keywords. Clean URLs improve the user experience and help search engines understand the content of the page.</li>
+        <li><strong>Internal Linking:</strong> Internal linking connects different pages of your website, enhancing navigation and helping search engines understand your content structure.</li>
+        <li><strong>Schema Markup:</strong> Schema markup is structured data that helps search engines understand the context of a webpage's content. This markup can enable rich snippets in search results, improving visibility.</li>
+        <li><strong>Responsive Design (Mobile Optimization):</strong> Responsive design ensures a webpage adapts to different screen sizes and devices. It enhances the user experience and SEO.</li>
+        <li><strong>Sitemap (<code>&lt;link rel="sitemap"&gt;</code>):</strong> A sitemap helps search engines discover and index all pages on a website. It improves crawlability and ensures important content is indexed.</li>
+    </ul>
+    
+</body>
+
+</html>
