@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Search</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/174/174883.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .header span {
+            font-family: cursive;
+            font-size: 24px;
+        }
+
+        form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            color: blueviolet;
+            border: 2px solid blueviolet;
+            border-radius: 5px;
+        }
+
+        ::placeholder {
+            color: blueviolet;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+
+        .FLIP,
+        .AMA {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .FLIP img,
+        .AMA img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <span>YOUTUBE</span>
+        <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt="YouTube" width="50px" height="50px">
+    </div>
+
+    <form action="https://www.youtube.com/results" method="get">
+        <input type="text" name="search_query" placeholder="Search on Youtube">
+        <button type="submit" style="font-family: cursive;">Submit</button>
+    </form>
+
+    <div class="FLIP">
+        <span>FLIPKART</span>
+        <img src="https://cdn2.iconfinder.com/data/icons/social-icons-color/512/flipkart-64.png" alt="Flipkart">
+    </div>
+
+    <form action="https://www.flipkart.com/search" method="get" target="_blank">
+        <input type="text" name="q" placeholder="Search on Flipkart">
+        <button type="submit" style="font-family: cursive;">Submit</button>
+    </form>
+
+    <div class="AMA">
+        <span>AMAZON</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+    </div>
+
+    <form action="https://www.amazon.in/s" method="get" target="_blank">
+        <input type="text" name="k" placeholder="Search on Amazon">
+        <button type="submit" style="font-family: cursive;">Submit</button>
+
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+    <form action="/first/HTML 1 .html" method="get" target="_blank">
+        <input type="email" placeholder="Search on Amazon">
+        <button type="submit" style="font-family: cursive;">Submit</button>
+
+    </form>
+    <br>
+    <br>
+
+
+
+    <br>
+    <br>
+    <br>
+    <form action="/first/HTML 1 .html" method="get" target="_blank">
+        <input type="password" name="k" placeholder="Search on Amazon">
+        <button type="submit" style="font-family: cursive;">Submit</button>
+
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    <form action="/first/HTML 1 .html" method="get" target="_blank">
+        <input type="date" name="k" placeholder="Search on Amazon">
+        <button type="submit" style="font-family: cursive;">Submit</button>
+
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+    <address>
+        <pre>
+      <h3> 
+         input has - place holder, required , minlength,maxlength and min,max
+        use ctrl + space for the different type of attributes present in commited attributes
+        1. **`minlength` and `maxlength`**: Define the minimum and maximum number of characters for text inputs (e.g.,
+        `text`, `password`).
+        2. **`min` and `max`**: Specify numeric or range limits for inputs like `number`, `range`, or `date`.
+        3. `min` and `max` can be used independently or together, depending on the requirement.
+        4. `minlength` and `maxlength` are for text length, while `min` and `max` are for numeric ranges.
+        5. Both pairs (`minlength`/`maxlength` and `min`/`max`) are useful for validating user input effectively.
+        lable for="ID NAME GIVEN TO INPUT"
+    </h3>
+    </pre>
+    </address>
+</body>
+
+</html>
