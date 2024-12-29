@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE LAST</title>
+    <style>
+        table {
+            width: 75%;
+            height: 250px;
+            text-align: center;
+
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+
+        /* tbody td {
+            border: none;
+        }
+
+        tfoot td {
+            border: none;
+        }
+        caption{
+            padding: 10px;
+            caption-side: bottom;
+        } */
+    </style>
+</head>
+
+<body>
+    <pre>
+        <h3>
+WE CAN REMOVE THE LINE IN BETWEEN ROWS OF A TABLE USING A STYLE SUCH AS:
+tfoot tr { border: none; }
+For other sections, use the thead and tbody selectors as needed.
+</h3>
+    </pre>
+
+    <table>
+        <caption>MARKS SHEET</caption>
+        <thead>
+            <tr>
+                <td>SUBJECT</td>
+                <td>MARKS</td>
+            </tr>
+        </thead>
+        <tbody>
+
+            <td>MATHS</td>
+            <td>20</td>
+
+        </tbody>
+
+        <thead>
+            <td>HINDI</td>
+            <td>20</td>
+            </tr>
+            <thead>
+                <td>SST</td>
+                <td>20</td>
+            </thead>
+
+        <tfoot>
+            <tr>
+                <td>SCIENCE</td>
+                <td>20</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <pre>
+        <h3>
+Let's understand what happens:
+We want to remove the middle line between MATHS and SCIENCE.
+So, add tfoot to SCIENCE and thead to MATHS. 
+Make sure that HINDI, SST, and SUBJECT MARKS remain in their own positions.
+Then, give them the same tag, which is thead.
+</h3>
+
+    </pre>
+    <div style="display: flex; justify-content: center;">
+        <table>
+            <tr>
+                <td rowspan="2">
+                    STATE OF HEALTH
+                </td>
+                <td colspan="2">
+                    FASTING VALUE
+                </td>
+
+                <td>AFTER EATING</td>
+            </tr>
+            <tr>
+
+                <td>MINIMUM</td>
+                <td>MAXIMUM</td>
+                <td>2 HOUR AFTER EATING </td>
+            </tr>
+
+
+            <tr>
+                <td>HEALTHY</td>
+                <td>70</td>
+                <td>100</td>
+                <td>LESS THAN 140</td>
+            </tr>
+            <tr>
+                <td>PRE-DIBATIES</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140 T0 200</td>
+            </tr>
+            <tr>
+                <td>DIBATIES</td>
+                <td>MORE THAN 126</td>
+                <td>N/A</td>
+                <td>MORE THAN 200</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
