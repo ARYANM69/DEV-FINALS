@@ -15,7 +15,8 @@
 
         table,
         tr,
-        td {
+        td,
+        th {
             border: 1px solid black;
             border-collapse: collapse;
         }
@@ -77,19 +78,20 @@ For other sections, use the thead and tbody selectors as needed.
     </table>
 
     <pre>
-        <h3>
+        <h3 style="display: flex;justify-content: center;">
 Let's understand what happens:
 We want to remove the middle line between MATHS and SCIENCE.
 So, add tfoot to SCIENCE and thead to MATHS. 
 Make sure that HINDI, SST, and SUBJECT MARKS remain in their own positions.
 Then, give them the same tag, which is thead.
+"display: flex;justify-content: center;" USED TO MAKE AND CONTENT IN CENTRE OF THE PAGE 
 </h3>
 
     </pre>
     <div style="display: flex; justify-content: center;">
         <table>
             <tr>
-                <td rowspan="2">
+                <td rowspan="2" style="background-color: aquamarine;">
                     STATE OF HEALTH
                 </td>
                 <td colspan="2">
@@ -126,6 +128,166 @@ Then, give them the same tag, which is thead.
             </tr>
         </table>
     </div>
-</body>
+    <br>
+    <br>
+    <br>
+    <div style="display: flex;justify-content: center;">
+        <table>
+            <tr>
+                <td colspan="7">TIME TABLE</td>
+            </tr>
+            <tr>
+                <td rowspan="6">HOURS</td>
+                <td>MONDAY</td>
+                <td>TUESDAY</td>
+                <td>WEDNESDAY</td>
+                <td>THRUSDAY</td>
+                <td>FRIDAY</td>
+            </tr>
+            <tr>
+                <td>HINDI</td>
+                <td>ENGLISH</td>
+                <td>MATHS</td>
+                <td>SCIENCE</td>
+                <td>SST</td>
+            </tr>
+            <tr>
+                <td>HINDI</td>
+                <td>ENGLISH</td>
+                <td>MATHS</td>
+                <td>SCIENCE</td>
+                <td>SST</td>
+
+
+            </tr>
+            <tr>
+
+                <td colspan="5">LUNCH</td>
+            </tr>
+            <tr>
+                <td>HINDI</td>
+                <td>ENGLISH</td>
+                <td>MATHS</td>
+                <td>SCIENCE</td>
+                <td rowspan="2">PROJECT</td>
+            </tr>
+            <tr>
+                <td>HINDI</td>
+                <td>ENGLISH</td>
+                <td>MATHS</td>
+                <td>SCIENCE</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <pre> STYLE VISIBILITY:COLLAPSE==hidES THE COLOUMN 
+        colgroup is theire
+        colgroup 
+        col span="1" for first coloumn we can change its whole background colour
+        /colgroup
+
+        IMPORTANT ROWGROUP IS NOT POSSIBLE
+    </pre>
+
+    <div style="display: flex;justify-content: center;">
+        <table>
+
+            <colgroup>
+                <col span="1" style="background-color: none;">
+                <col span="1" style="background-color: rgb(255, 0, 0);">
+                <col span="1" style="background-color:none">
+                <col span="1" style="background-color:rgb(255, 0, 0);">
+                <col span="1" style="visibility: collapse;">
+
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Col 1</th>
+                    <th>Col 2</th>
+                    <th>Col 3</th>
+                    <th>Col 4</th>
+                    <th>Col 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div style='display: flex;justify-content: center;'>
+        <img src="https://wallpapers.com/images/featured/spiderman-p4ashmgeamn2mvkn.jpg" alt="spiderman" loading="lazy"
+            height="500px" width="700px">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="display: flex;justify-content: center;">
+
+
+        <table>
+            <tr>
+                <td>
+                    <div style="display: flex;justify-content: center;">
+                        <iframe width="360" height="250"
+                            src="https://www.youtube.com/embed/nTqz63e4lWI?si=u6WbWyPYmmvf4YQx&autoplay=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+
+                    </div>
+                </td>
+                <td>
+                    <div style="display: flex;justify-content: center;">
+                        <iframe width="360" height="250"
+                            src="https://www.youtube.com/embed/S7KHy4zsW4M?si=w4Nq4oFgMHK0bpI6&autoplay=1&mute=1"
+                            title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+                </td>
+                <td>
+                    <div style="display: flex;justify-content: center;">
+                        <iframe width="360" height="250"
+                            src="https://www.youtube.com/embed/S7KHy4zsW4M?si=w4Nq4oFgMHK0bpI6&autoplay=1&mute=1"
+                            title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
 
 </html>

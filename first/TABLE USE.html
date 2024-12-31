@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>col span</title>
+    <style>
+        table {
+            width: 50%;
+            height: 250px;
+        }
+
+        table,
+        th,
+        td,
+        tr,
+        thead,
+        tbody {
+
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex;justify-content: center;padding: 300px;">
+        <table>
+
+            <colgroup>
+                <col span="1" style="background-color: rgb(160, 160, 190);">
+                <col span="1" style="background-color: rgb(234, 72, 199);">
+                <col span="1" style="background-color: rgb(55, 211, 220);">
+                <col span="1" style="background-color: rgb(226, 206, 49);">
+                <col span="1" style="visibility: collapse;">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th>Col 1</th>
+                    <th>Col 2</th>
+                    <th>Col 3</th>
+                    <th>Col 4</th>
+                    <th>Col 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="display: flex;justify-content: center;">
+        <table style="text-align: center;">
+            <tr>
+                <td colspan="2">HEADER</td>
+
+            </tr>
+            <tr>
+                <td colspan="2">NAV</td>
+
+            </tr>
+            <tr>
+                <td>SECTION</td>
+                <td rowspan="2">ARTICLE</td>
+            </tr>
+            <tr>
+                <td>ARTICLE</td>
+
+            </tr>
+            <tr>
+                <td colspan="2">FOOTER</td>
+
+            </tr>
+        </table>
+    </div>
+
+    <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Lc3_2018_%28263682303%29_%28cropped%29.jpeg">
+        <figcaption style="padding-left: 120px;padding-top: 20px;">HLEEO JI MR ENGLISH MAN </figcaption>
+    </figure>
+
+    <pre>
+    &amp;
+    &copy;
+    &dollar;
+    &gt;
+    &lt;
+</pre>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Welcome to code help</h2>
+    <h2>Contact us</h2>
+    <form action="https://www.codehelp.in/" target="_blank">
+        <label for="Nmae">Name</label>
+        <input id="Nmae" required type="text" placeholder="Enter your name" maxlength="20"
+            style="text-align: center;"><br>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter your email" style="text-align: center;"><br>
+
+
+
+        <label for="num">NUMBER</label>
+        <input type="number" placeholder="Enter your Contact" style="text-align: center;" maxlength="10"><br>
+
+
+
+
+        <label for="select">Gender</label>
+        <select id="select">
+            <option disabled selected>SELECT GENDRE</option>
+            <option>MALE</option>
+            <option>FEMALE</option>
+        </select><br>
+
+        <label for="datetime">DOB</label>
+        <input id="datetime" type="datetime-local" placeholder="Enter your datetime"><br>
+
+        <label for="rate">RATING</label>
+        <input id="rate" type="checkbox">1
+        <input id="rate" type="checkbox">2
+
+        <input id="rate" type="checkbox">3
+
+        <input id="rate" type="checkbox">4
+
+        <input id="rate" type="checkbox">5<br>
+
+
+        <label for="textarea">SEND MESSAGE</label>
+        <br>
+        <textarea id="textarea" placeholder="Enter your text"
+            style="width: 50%; height: 100px;text-align: center;"></textarea>
+        <br>
+        <br>
+
+
+        <button type="submit">SEND</button> <button type="reset">RESET</button>
+
+    </form>
+<br>
+
+<figure>
+    <a href="https://www.youtube.com/watch?v=n_E3bLYuQBo&t=383s" target="_blank">
+    <img src="https://imgs.search.brave.com/bfyLggT5FL_IT1xSEh_Ba5046mvK3ztn_HV6Cal1jW0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi80LzQwL1N1/bmZsb3dlcl9za3lf/YmFja2Ryb3AuanBn/LzUxMnB4LVN1bmZs/b3dlcl9za3lfYmFj/a2Ryb3AuanBn">
+</a>
+</figure>
+
+</body>
+
+</html>
