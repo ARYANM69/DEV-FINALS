@@ -6,94 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEST</title>
     <style>
-        body {
-            padding-top: 300px;
-        }
+    
 
-        table {
-            margin: 0 auto;
-            /* Center table horizontally */
-            text-align: center;
-            border-collapse: collapse;
-            width: 50%;
-            /* Increase table width to 80% of the page */
-            height: 10px;
-            /* Set a fixed height for the table */
-            font-size: 1.5rem;
-            /* Optional: Increase font size for better readability */
-        }
 
         table,
         tr,
         td,
         th {
             border: 1px solid black;
+            border-collapse: collapse;
         }
     </style>
 </head>
 
 <body>
-    <table>
+
+  
+        <header>
+            <form action="/first/HTML 1 .html">
+                <label for="NAME">NAME</label>&nbsp;&nbsp;
+                <input id="NMAE" type="text" maxlength="10" minlength="4"><br>
+                <br>
+                <label for="EMAIL">EMAIL</label>&nbsp;&nbsp;
+                <input id="EMAIL" type="email" required><br>
+                <br>
+                <label for="PHONE">PHONE NUMBER</label>&nbsp;&nbsp;
+                <input id="PHONE" type="number" maxlength="10"><br>
+                <br>
+                <label for="GENDRE">GENDRE</label>&nbsp;&nbsp;
+                <select id="GENDRE">
+                    <option disabled selected>
+                        Choose gendre
+                    </option>
+                    <option>
+                        MALE
+                    </option>
+                    <option>
+                        FEMALE
+                    </option>
+                </select> <br>
+                <br>
+                <button type="reset">reset</button>&nbsp;
+                <button type="submit">Submit</button>
+                <br>
+
+            </form> <br>
+
+            <a href="tel:+919354106443">Call ME</a>&nbsp;
+            <a href="mailto:aryanmishra200424@gmail.com">Mail</a>
+        </header>
+        <br>
+        <br>
         <table>
-            <tr>
-                <!-- 'Day' spanning 3 rows -->
-                <th rowspan="3">Day</th>
-                <!-- 'Seminar' spanning 4 columns -->
-                <th colspan="4">Seminar</th>
-            </tr>
-            <tr>
-                <!-- 'Schedule' spanning 2 columns -->
-                <th colspan="2">Schedule</th>
-                <!-- 'Topic' spanning 2 rows and 2 columns -->
-                <th rowspan="2" colspan="2">Topic</th>
-            </tr>
-            <tr>
-                <!-- Begin and End under Schedule -->
-                <td>Begin</td>
-                <td>End</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th rowspan="3">Day</th>
+                    <th colspan="4">Seminar</th>
+                </tr>
+                <tr>
+                    <th colspan="2">Schedule</th>
+                    <th colspan="2" rowspan="2">Topic</th>
+                </tr>
+                <tr>
+                    <th>Begin</th>
+                    <th>End</th>
+                </tr>
+    
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2">Monday</th>
+                    <td rowspan="2">8:00am</td>
+                    <td rowspan="2">11:00am</td>
+                    <td colspan="2">Introduction to Xml</td>
+    
+                </tr>
+                <tr>
+                    <td colspan="2">Validity:DTD and Relax NO</td>
+                </tr>
+    
+                <tr>
+                    <td rowspan="3">Tuesday</td>
+                    <td>8:00am</td>
+                    <td>11:00am</td>
+                    <td colspan="2">X path</td>
+    
+                </tr>
+                <tr>
+                    <td>11:00am</td>
+                    <td>2:00pm</td>
+                    <td rowspan="2" colspan="2">Introduction to XML</td>
+                </tr>
+                <tr>
+                    <td>2:00pm</td>
+                    <td>5:00pm</td>
+                    
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8:00am</td>
+                    <td>12:00pm</td>
+                    <td colspan="2">Xsl Formating Objects</td>
+                </tr>
+    
+            </tbody>
+            </table>
 
-            <tr></tr>
-            <tr></tr>
 
-            <tr>
-                <!-- Monday Schedule -->
-                <td rowspan="2">Monday</td>
-                <td rowspan="2">8:00 AM</td>
-                <td rowspan="2">5:00 PM</td>
-                <td>Introduction to XML</td>
-            </tr>
-            <tr>
-                <td>Validity: DTD and Relax NO</td>
-            </tr>
-            <tr></tr>
-            <tr>
-            <tr>
-                <td rowspan="3">Tuesday</td>
-                <td>8:00 AM</td>
-                <td>11:00 AM</td>
-                <td rowspan="2">XPath</td>
-            </tr>
-            <tr>
-                <td>11:00 AM</td>
-                <td>2:00 PM</td>
-            </tr>
-            <tr>
-                <td>2:00 PM</td>
-                <td>5:00 PM</td>
-                <td>Introduction to XML</td>
-            </tr>
+  
 
-            </tr>
-            <tr></tr>
-            <tr></tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>3:00am</td>
-                <td>12:00pm</td>
-                <td>XSL, Formating Objects</td>
-            </tr>
-        </table>
+
+
 </body>
 
 </html>
